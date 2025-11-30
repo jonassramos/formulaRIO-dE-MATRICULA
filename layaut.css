@@ -1,0 +1,30 @@
+#app{
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+  border: 5px solid red;
+  padding: 4rem;
+
+  & .caixa-branca{
+    max-width: 33rem;
+    margin-left: auto;
+  }
+}
+
+
+
+aside {
+  border: 5px solid black;
+  background-color: bisque;
+  padding: 4rem;
+
+  & .caixa-bege{
+    max-width: 31rem;
+
+  }
+}
