@@ -5,6 +5,28 @@
 
 }
 
+:root {
+
+  --fot-family: 'poppins',sans-serif;
+  --text: 400 1rem/1.5 var(--fot-family);
+  --text-sm: 400 0.875rem/1.4 var(--fot-family);
+
+  --tex-primary: #292524;
+  --tex-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight:#e43a12;
+
+  --suface-primary:#ffffff;
+  --suface-secundary:#fee7d6;
+
+  --stroke-defauld:#d6d3d1;
+  --stroke-hightlight:#f3541c;
+  --stroke-error:#dc2626;
+
+
+}
+
+
 
 
 
