@@ -5,9 +5,10 @@
   overflow: hidden;
 }
 
+
+
 main {
   overflow: auto;
-  border: 5px solid red;
   padding: 4rem;
 
   & .caixa-branca{
@@ -29,7 +30,6 @@ main {
 }
 
 aside {
-  border: 5px solid black;
   background-color: bisque;
   padding: 4rem;
 
