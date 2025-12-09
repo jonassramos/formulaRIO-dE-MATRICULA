@@ -11,13 +11,14 @@
   --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 0.875rem/1.4 var(--font-family);
 
-  --tex-primary: #292524;
-  --tex-secondary: #57534e;
+  --text-primary: #292524;
+  --text-secondary: #57534e;
   --text-tertiary: #8f8881;
   --text-highlight:#e43a12;
 
   --suface-primary:#ffffff;
   --suface-secundary:#fee7d6;
+  --suface-disabled:#E7E5E4;
 
   --stroke-defauld:#d6d3d1;
   --stroke-hightlight:#f3541c;
@@ -41,4 +42,15 @@ h1, h2{
 img {
   max-width:100%;
   height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
 }

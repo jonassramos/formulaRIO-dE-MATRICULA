@@ -10,7 +10,7 @@ input, textarea, select {
 }
 label {
   font: var(--text-sm);
-  color: var(--tex-secondary);
+  color: var(--text-secondary);
 
   display: block;
   margin-bottom: .25rem;
@@ -47,4 +47,22 @@ input[type="date"]{
 
 select{
   background:url(../icos/setaParaBaixo.svg)no-repeat calc(100% - 1rem);
+}
+
+.address .flex {
+ gap: 1rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: .5;
+  
+}
+
+input{
+  &[disabled] {
+    background-color: var(--suface-disabled);
+    border: 1px solid var(--stroke-defauld);
+
+    color: var(--text-primary);
+  }
 }
