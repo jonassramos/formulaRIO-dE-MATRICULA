@@ -11,14 +11,42 @@ label + .radio-wrapper {
 .radio-inner {
   border:1px solid var(--stroke-defauld);
   border-radius: 0.5rem;
+
   display: grid;
   justify-items: center;
-  gap: 1.5rem;
+  gap:.5rem;
 
+  position: relative;
   padding: 1rem .5rem .5rem;
   & input,
   & input:focus,
   & input:hover {
     all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  .radios-image{
+    background-image:url(../icos/radios2.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+  }
+  &:hover, &:focus-within {
+    border:1px solid var(--stroke-hightlight);
+    
+    & .radios-image {
+      background-image: url(../icos/radios3.svg);
+    }
+  }
+
+  &:has(input:checked) {
+    border: 2px solid var(--stroke-hightlight);
+
+    & .radios-image {
+      background-image: url(../icos/radios1.svg);
+    }
   }
 }
