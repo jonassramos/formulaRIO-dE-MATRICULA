@@ -5,6 +5,7 @@ label + .radio-wrapper {
  .radio-wrapper{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 1rem;
 
 }
 
@@ -25,7 +26,7 @@ label + .radio-wrapper {
     position: absolute;
     inset: 0;
   }
-  .radios-image{
+  .radio-image{
     background-image:url(../icos/radios2.svg);
     width: 1.5rem;
     height: 1.5rem;
@@ -37,7 +38,7 @@ label + .radio-wrapper {
   &:hover, &:focus-within {
     border:1px solid var(--stroke-hightlight);
     
-    & .radios-image {
+    & .radio-image {
       background-image: url(../icos/radios3.svg);
     }
   }
@@ -45,7 +46,7 @@ label + .radio-wrapper {
   &:has(input:checked) {
     border: 2px solid var(--stroke-hightlight);
 
-    & .radios-image {
+    & .radio-image {
       background-image: url(../icos/radios1.svg);
     }
   }
